@@ -83,3 +83,19 @@
     background: transparent;
 }
 
+@media screen and (max-width: 740px){
+    .top-right-slant::before {
+        background: inherit;
+        top: 0;
+        content: '';
+        display: block;
+        height: 50%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        transform: skewY(-1deg);
+        transform-origin: -250%;
+        z-index: -1;
+        border-top: 4pt solid black;
+    }
+}
