@@ -54,7 +54,7 @@
 }
 
 .middle-right-slant {
-    height: 50vh;
+    min-height: 50vh;
     background-color:#f7941d;
     /* z-index:2 */
 }
