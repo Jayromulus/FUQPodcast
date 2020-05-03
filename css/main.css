@@ -1,4 +1,5 @@
 @import url('./angle-divs.css');
+@import url('./scrollbar.css');
 
 html {
     margin:0;
@@ -18,10 +19,12 @@ body {
 .black-box {
     /* margin: 25%; */
     background-color: black;
-    width: 50%;
-    padding-top: 50%;
+    width: 40%;
+    padding-top: 40%;
     border-radius: 10%;
     position: relative;
+    min-width: 50px;
+    min-height: 50px;
 }
 
 .black-box-text {
@@ -44,6 +47,26 @@ body {
     border-left: 2pt solid black;
 }
 
+.external-links {
+    color: white;
+    text-decoration: none;
+}
+
+.external-links:hover{
+    color: gainsboro;
+    text-decoration: underline;
+}
+
+.card {
+    margin-bottom: 10%;
+    background-color: slategray
+}
+
+
+.overflow-scroll {
+    max-height: 100%;
+    overflow-y: scroll;
+}
 
 /* iPad Pro PORTRAIT */
 @media screen and (max-width: 1024px) {
