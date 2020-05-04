@@ -4,7 +4,7 @@
 html {
     margin:0;
     padding: 0;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 body {
@@ -12,6 +12,12 @@ body {
     background: url('../assets/background.png');
     width: 100vw;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.hidden {
+    display:none;
     margin: 0;
     padding: 0
 }
@@ -68,6 +74,11 @@ body {
     overflow-y: scroll;
 }
 
+.social-links {
+    padding-top:5%;
+    text-align: center
+}
+
 /* iPad Pro PORTRAIT */
 @media screen and (max-width: 1024px) {
     .banner{
@@ -77,6 +88,9 @@ body {
     }
     .left-section, .right-section {
         border: none;
+    }
+    .bottom-about {
+        margin-top: 7.5%
     }
 }
 /* iPad Pro LANDSCAPE*/
@@ -100,6 +114,9 @@ body {
     .left-section, .right-section {
         border: none;
     }
+    .bottom-about {
+        margin-top: 7.5%
+    }
 }
 /* iPad LANDSCAPE*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -122,6 +139,9 @@ body {
     .left-section, .right-section {
         border: none;
     }
+    .bottom-about {
+        margin-top: 7.5%
+    }
 }
 /* iPhone 6/7/8 Plus LANDSCAPE */
 @media only screen and (min-device-width : 411px) and (max-device-width : 736px) and (orientation : landscape) {
@@ -133,6 +153,9 @@ body {
     .left-section, .right-section {
         border: none;
     }
+    .bottom-about {
+        margin-top: 7.5%
+    }
 }
 /* Pixel 2 & Pixel 2 XL PORTRAIT */
 @media screen and (max-width: 412px) {
@@ -143,6 +166,9 @@ body {
     }
     .left-section, .right-section {
         border: none;
+    }
+    .bottom-about {
+        margin-top: 7.5%
     }
 }
 /* Pixel 2 LANDSCAPE */
@@ -177,6 +203,14 @@ body {
     .left-section, .right-section {
         border: none;
     }
+    .bottom-about {
+        margin-top: 7.5%
+    }
+
+    .social-links {
+        padding-top:10%;
+        text-align: center
+    }
 }
 /* iPhone 6/7/8 LANDSCAPE */
 @media only screen and (min-device-width : 411px) and (max-device-width : 667px) and (orientation : landscape) {
@@ -210,6 +244,9 @@ body {
     .left-section, .right-section {
         border: none;
     }
+    .bottom-about {
+        margin-top: 7.5%
+    }
 }
 /* Galaxy S5 LANDSCAPE */
 @media only screen and (min-device-width : 411px) and (max-device-width : 640px) and (orientation : landscape) {
@@ -231,6 +268,9 @@ body {
     }
     .left-section, .right-section {
         border: none;
+    }
+    .bottom-about {
+        margin-top: 7.5%
     }
 }
 /* iPhone 5/SE LANDSCAPE */

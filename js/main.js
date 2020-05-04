@@ -1,6 +1,17 @@
 let episodes = document.getElementById('episodeList')
 
-
+let toggleHiding = () => {
+    let hiddenEpisodes = document.getElementsByClassName('toHide')
+    // if(hiddenEpisodes[0].classList.contains('hidden')) {
+    //     console.log('found hidden cards')
+    // }
+    for(let i = 0; i < hiddenEpisodes.length; i++){
+        hiddenEpisodes[i].classList.toggle('hidden')
+    }
+    // hiddenEpisodes.forEach(element => {
+    //     element.classList.toggle('hidden')
+    // });
+}
 
 for (let i = 0; i < 40; i++) {
 
@@ -42,7 +53,7 @@ for (let i = 0; i < 40; i++) {
 
         col.appendChild(colSpacing)
 
-        episodes.appendChild(col)
+        episodes.appendChild(col)   
     }
     else {
         let col =  document.createElement('div');
@@ -50,10 +61,14 @@ for (let i = 0; i < 40; i++) {
         
         let card = document.createElement('div');
         card.classList.add('card');
-        
+        if(i > 5) {
+           card.classList.add('hidden', 'toHide')
+        }
+
         let cardHeader = document.createElement('div');
         cardHeader.classList.add('card-header');
         cardHeader.innerText = 'Episode Name';
+        
         
         let cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
@@ -64,9 +79,52 @@ for (let i = 0; i < 40; i++) {
         
         col.appendChild(card);
         
+        // let viewMoreCol =  document.createElement('div');
+        // viewMoreCol.classList.add('col-sm-12', 'col-md-4');
+
+        // let seeMore = document.createElement('div')
+        // seeMore.onclick = () => toggleHiding();
+        // seeMore.classList.add('toHide', 'card')
+        // seeMore.innerText = "see more"
+
+        // let seeLessCo =  document.createElement('div');
+        // viewMoreCol.classList.add('col-sm-12', 'col-md-4');
+
+
+        // let seeLess = document.createElement('a')
+        // seeLess.onclick = () => toggleHiding();
+        // seeLess.classList.add('hidden', 'toHide')
+
         episodes.appendChild(col);
+
+        let seeMore = document.createElement('div')
+        seeMore.classList.add('col-sm-12', 'col-sm-6')
+        let moreCard = document.createElement('div')
+        moreCard.classList.add('card', 'toHide')
+        let moreBody = document.createElement('div')
+        moreBody.classList.add('card-body')
+        let seeLink = document.createElement('a')
+        seeLink.innerText = 'see more'
+        seeLink.addEventListener('click', () => toggleHiding())
+
+        moreBody.appendChild(seeLink)
+        moreCard.appendChild(moreBody)
+        seeMore.appendChild(moreCard)
+
+        if(i === 5) {
+            console.log('added seemore')
+            episodes.appendChild(seeMore)
+        }
+        
+        // if(i === 39) {
+        //     console.log('added seeless')
+        //     episodes.appendChild(seeLess)
+        // }
     }
 }
+
+
+
     
     {/* <div class="col-sm-12 col-md-3">
     <div class="card">
