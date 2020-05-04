@@ -115,11 +115,25 @@ for (let i = 0; i < 40; i++) {
             console.log('added seemore')
             episodes.appendChild(seeMore)
         }
+
+        let seeLess = document.createElement('div')
+        seeLess.classList.add('col-sm-12', 'col-sm-6')
+        let lessCard = document.createElement('div')
+        lessCard.classList.add('card', 'toHide', 'hidden')
+        let lessBody = document.createElement('div')
+        lessBody.classList.add('card-body')
+        let eesLink = document.createElement('a')
+        eesLink.innerText = 'see less'
+        eesLink.addEventListener('click', () => toggleHiding())
+
+        lessBody.appendChild(eesLink)
+        lessCard.appendChild(lessBody)
+        seeLess.appendChild(lessCard)
         
-        // if(i === 39) {
-        //     console.log('added seeless')
-        //     episodes.appendChild(seeLess)
-        // }
+        if(i === 39) {
+            console.log('added seeless')
+            episodes.appendChild(seeLess)
+        }
     }
 }
 
