@@ -92,6 +92,14 @@ body {
 }
 /* iPad PORTRAIT*/
 @media screen and (max-width: 769px) {
+    .banner{
+        width: 112.5%;
+        margin-left: -6.25%;
+        margin-top: 5%
+    }
+    .left-section, .right-section {
+        border: none;
+    }
 }
 /* iPad LANDSCAPE*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -106,6 +114,14 @@ body {
 }
 /* iPhone 6/7/8 Plus PORTRAIT */
 @media screen and (max-width: 414px) {
+    .banner{
+        width: 112.5%;
+        margin-left: -6.25%;
+        margin-top: 5%
+    }
+    .left-section, .right-section {
+        border: none;
+    }
 }
 /* iPhone 6/7/8 Plus LANDSCAPE */
 @media only screen and (min-device-width : 411px) and (max-device-width : 736px) and (orientation : landscape) {
@@ -120,6 +136,14 @@ body {
 }
 /* Pixel 2 & Pixel 2 XL PORTRAIT */
 @media screen and (max-width: 412px) {
+    .banner{
+        width: 112.5%;
+        margin-left: -6.25%;
+        margin-top: 5%
+    }
+    .left-section, .right-section {
+        border: none;
+    }
 }
 /* Pixel 2 LANDSCAPE */
 @media only screen and (min-device-width : 411px) and (max-device-width : 731px) and (orientation : landscape) {
