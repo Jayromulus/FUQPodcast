@@ -61,7 +61,7 @@ for (let i = 0; i < 40; i++) {
         
         let card = document.createElement('div');
         card.classList.add('card');
-        if(i > 5) {
+        if(i > 4) {
            card.classList.add('hidden', 'toHide')
         }
 
@@ -111,7 +111,7 @@ for (let i = 0; i < 40; i++) {
         moreCard.appendChild(moreBody)
         seeMore.appendChild(moreCard)
 
-        if(i === 5) {
+        if(i === 4) {
             console.log('added seemore')
             episodes.appendChild(seeMore)
         }
