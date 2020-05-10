@@ -12,7 +12,7 @@ let toggleHiding = () => {
     //     element.classList.toggle('hidden')
     // });
 }
-
+// if
 for (let i = 0; i < 40; i++) {
 
     if(i < 3 && window.screen.width > 748){
@@ -35,7 +35,7 @@ for (let i = 0; i < 40; i++) {
 
         episodes.appendChild(col)
     }
-    else if (i < 1 && window.screen.width < 749){
+    else if (i < 1 && window.screen.width < 769){
         let col = document.createElement('div')
         col.classList.add('col-sm-12', 'col-md-4')
 
