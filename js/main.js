@@ -119,7 +119,7 @@ for (let i = 0; i < 40; i++) {
         seeMore.appendChild(moreCard)
 
         if(i === 5 && window.innerWidth < 481) {
-            console.log('added seemore')
+            // console.log('added seemore')
             episodes.appendChild(seeMore)
         }
 
@@ -143,7 +143,7 @@ for (let i = 0; i < 40; i++) {
         seeLess.appendChild(lessCard)
         
         if(i === 39) {
-            console.log('added seeless')
+            // console.log('added seeless')
             episodes.appendChild(seeLess)
         }
     }
@@ -156,7 +156,19 @@ let newsletter = document.getElementById('newsletter-btn');
 let newsletterSubmit = (e) => {
     mail = document.getElementById('newsletter-email');
     e.preventDefault();
-    console.log(mail.value)
+    let valid = mail.checkValidity();
+    // console.log('valid: ' + valid)
+    if(valid && mail.value != ''){
+        console.log(mail.value)
+    }
+    else if(!valid) {
+        console.log('invalid email')
+        alert('Invalid email format')
+    }
+    else {
+        console.log('please fill out the input field')
+        alert('Please enter an email before subscribing!')
+    }
 }
 
 newsletter.addEventListener('click', newsletterSubmit);
