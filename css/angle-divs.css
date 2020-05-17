@@ -101,7 +101,12 @@
 
 .bottom-right-slant {
     height: 15vh;
+    padding-top: 4.5%;
     background: transparent;
+}
+
+.bottom-right-slant .card {
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 740px){

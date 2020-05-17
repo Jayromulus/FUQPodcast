@@ -14,8 +14,9 @@ let toggleHiding = () => {
 }
 // if
 for (let i = 0; i < 40; i++) {
-
-    if(i < 3 && window.screen.width > 748){
+    // console.log(window.screen.width)
+    // big screen (1920)
+    if(i < 3 && window.innerWidth > 480){
         let col = document.createElement('div')
         col.classList.add('col-sm-12', 'col-md-4')
 
@@ -35,7 +36,8 @@ for (let i = 0; i < 40; i++) {
 
         episodes.appendChild(col)
     }
-    else if (i < 1 && window.screen.width < 769){
+    // small screen (iphone x reference)
+    else if (i < 1 && window.innerWidth < 481){
         let col = document.createElement('div')
         col.classList.add('col-sm-12', 'col-md-4')
 
@@ -61,9 +63,14 @@ for (let i = 0; i < 40; i++) {
         
         let card = document.createElement('div');
         card.classList.add('card');
-        if(i > 4) {
+
+        if(i > 5 && window.innerWidth < 481) {
            card.classList.add('hidden', 'toHide')
         }
+
+        // if(i > 11 && window.innerWidth > 480) {
+        //     card.classList.add('hidden', 'toHide')
+        //  }
 
         let cardHeader = document.createElement('div');
         cardHeader.classList.add('card-header');
@@ -72,7 +79,7 @@ for (let i = 0; i < 40; i++) {
         
         let cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
-        cardBody.innerText = 'information / episode dscription withd whatever goes in here that you decide to fill out';
+        cardBody.innerText = 'information / episode dscription with whatever goes in here that you decide to fill out';
         
         card.appendChild(cardHeader);
         card.appendChild(cardBody);
@@ -111,10 +118,15 @@ for (let i = 0; i < 40; i++) {
         moreCard.appendChild(moreBody)
         seeMore.appendChild(moreCard)
 
-        if(i === 4) {
+        if(i === 5 && window.innerWidth < 481) {
             console.log('added seemore')
             episodes.appendChild(seeMore)
         }
+
+        // if(i === 11 && window.innerWidth > 480) {
+        //     console.log('added seemore')
+        //     episodes.appendChild(seeMore)
+        // }
 
         let seeLess = document.createElement('div')
         seeLess.classList.add('col-sm-12', 'col-sm-6')
@@ -136,6 +148,20 @@ for (let i = 0; i < 40; i++) {
         }
     }
 }
+
+
+
+let newsletter = document.getElementById('newsletter-btn');
+
+let newsletterSubmit = (e) => {
+    mail = document.getElementById('newsletter-email');
+    e.preventDefault();
+    console.log(mail.value)
+}
+
+newsletter.addEventListener('click', newsletterSubmit);
+
+
 
 
 

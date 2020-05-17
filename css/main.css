@@ -53,7 +53,8 @@ body {
 
 #social{
     background-color: #92278f;
-    border-radius: 10px
+    border-radius: 10px;
+    /* margin-top:5%; */
 }
 
 .overflow-scroll {
@@ -62,9 +63,14 @@ body {
 }
 
 .social-links {
-    padding-top:5%;
-    text-align: center
+    text-align: center;
 }
+
+
+
+
+
+
 
 /* iPad Pro PORTRAIT */
 @media screen and (max-width: 1024px) {
