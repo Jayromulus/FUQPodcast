@@ -13,7 +13,7 @@ let toggleHiding = () => {
     // });
 }
 // if
-for (let i = 0; i < 40; i++) {
+for (let i = 0; i < 39; i++) {
     // console.log(window.screen.width)
     // big screen (1920)
     if(i < 3 && window.innerWidth > 480){
