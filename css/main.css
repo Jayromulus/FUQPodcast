@@ -29,6 +29,7 @@ body {
 .banner {
   width: 75%;
   min-width: 375px;
+  max-width: 1000px
 }
 
 .navigation {
