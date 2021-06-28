@@ -176,15 +176,3 @@ newsletter.addEventListener('click', newsletterSubmit);
 
 
 
-
-    
-    {/* <div class="col-sm-12 col-md-3">
-    <div class="card">
-    <div class="card-header">
-    test
-    </div>
-    <div class="card-body">
-    testing
-    </div>
-    </div>
-</div> */}

@@ -76,7 +76,8 @@
 
 .middle-right-slant {
     min-height: 50vh;
-    background-color:#f7941d;
+    background-color:rgb(124, 118, 110);
+    /* background-color:#4c7776; */
     /* z-index:2 */
 }
 
