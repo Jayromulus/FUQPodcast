@@ -17,16 +17,58 @@
   <div class="main">
     <!-- START HEADER -->
     <section class="header">
-      <img class="rounded mx-auto d-block banner" src="./assets/banner.png" />
+      <img class="rounded mx-auto d-block banner" src="./assets/FUQ!Banner.png" />
     </section>
     <!-- END HEADER -->
 
     <!-- START NAVIGATION BUTON (LOGO) -->
-    <section class="navigation">
-      <img height="100px" class="rounded" src="./assets/FUQ!Logo.png" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" />
-    </section>
+    <!-- <section class="navigation"> -->
+      <!-- <img height="100px" class="rounded" src="./assets/FUQ!Logo.png" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" /> -->
+      
+    <!-- </section> -->
     <!-- END NAVIGATION BUTTON -->
 
+    <!-- START MAIN BODY SECTION -->
+    <section class="body">
+      <div class="row" style="margin: 0%;">
+        <div class="col-md-4 col-sm-12 order-md-2" style="min-height: 25vh;">
+          <div class="card" style="background-color: #8659a8; color: white;margin:0px 2.5%">
+            <div class="card-body">
+              TESTING ABOIUT US SECTION
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12 order-md-1">
+          <div class="card" style="background-color: #0c8281; color: white;margin:0px 2.5%">
+            <div class="card-body">
+              TESTING THE PODCAST SECTION
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END MAIN BODY SECTION -->
+
+    <!-- START FOOTER -->
+    <section class="social-footer">
+      <footer>
+        <div class="row" style="margin: 0%;">
+          <div class="col-3 footer-placement">
+            <i class="fab fa-instagram fa-3x"></i>
+          </div>
+          <div class="col-3 footer-placement">
+            <i class="fab fa-facebook-square fa-3x"></i>
+          </div>
+          <div class="col-3 footer-placement">
+            <i class="fab fa-twitter-square fa-3x"></i>
+          </div>
+          <div class="col-3 footer-placement">
+            <i class="fas fa-bars fa-3x" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- END FOOTER -->
 
     <!-- START OFFCANVAS NAVIGATION -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -35,7 +77,7 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <a href="#header"><h2>Home</h2></a>
+        <a onclick="homeScroll()" data-bs-dismiss="offcanvas"><h2>Home</h2></a>
         
       </div>
     </div>
