@@ -23,8 +23,8 @@
 
     <!-- START NAVIGATION BUTON (LOGO) -->
     <!-- <section class="navigation"> -->
-      <!-- <img height="100px" class="rounded" src="./assets/FUQ!Logo.png" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" /> -->
-      
+    <!-- <img height="100px" class="rounded" src="./assets/FUQ!Logo.png" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" /> -->
+
     <!-- </section> -->
     <!-- END NAVIGATION BUTTON -->
 
@@ -32,18 +32,35 @@
     <section class="body">
       <div class="row" style="margin: 0%;">
         <div class="col-md-4 col-sm-12 order-md-2" style="min-height: 25vh;margin-bottom: 5%;">
-          <div class="card" style="background-color: #8659a8; color: white;margin:0px 2.5%">
+          <div class="card" style="background-color: #8659a8; color: white;margin:0px 2.5%;">
             <div class="card-body">
-              <h3>Do you have one of those friends you can talk to about anything? Like, your Ride or Die person who only judges you to your face? That bestie who can be brutally honest and loving all at the same time? That friend who can make you laugh until you cry? If not, you now have us! 
-                We are Holly and Julie!  Best friends who have a lot to say and so many follow up questions (FUQs) to ask. Join us for fun, laughter and more FUQs to better understand what the heck is going on in each other's minds. We are always ready for fun, laughter and a good story. Join us to find out what the FUQ we talk about next?</h3>
+              <h3>Do you have one of those friends you can talk to about anything? Like, your Ride or Die person who
+                only judges you to your face? That bestie who can be brutally honest and loving all at the same time?
+                We are Holly and Julie! Best friends who have a lot to say and so many follow up questions (FUQs) to
+                ask. We are always ready for fun, laughter and a good story. Join us to find out what the FUQ we talk
+                about next?</h3>
             </div>
           </div>
         </div>
         <div class="col-md-8 col-sm-12 order-md-1">
-          <div class="card" style="background-color: #0c8281; color: white;margin:0px 2.5%">
-            <div class="card-body">
-              TESTING THE PODCAST SECTION
-            </div>
+          <div class="card" style="background-color: #0c8281; color: white;margin:0px 2.5">
+            <!-- <div class="card-body"> -->
+              <!-- <video>
+                <source src="https://www.twitch.tv/videos/1070479244" controls type="video/mp4" />
+              </video> -->
+              <!-- <iframe
+                src="https://player.twitch.tv/?channel=jayromulus"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen="true"
+                height="100%"
+                width="100%">
+              </iframe> -->
+              <!-- <div id="twitch-embed"></div> -->
+              <iframe src="https://player.twitch.tv/?video=1070479244&parent=jayromulus.github.io/fuqpodcast" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe>
+
+
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -81,14 +98,28 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <a onclick="homeScroll()" data-bs-dismiss="offcanvas"><h2>Home</h2></a>
-        
+        <a onclick="homeScroll()" data-bs-dismiss="offcanvas">
+          <h2>Home</h2>
+        </a>
+
       </div>
     </div>
     <!-- END OFFCANVAS NAVIGATION -->
   </div>
 
   <script src="./js/main.js"></script>
+
+
+  <!-- Load the Twitch embed script -->
+  <!-- <script src="https://player.twitch.tv/js/embed/v1.js"></script> -->
+
+  <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+  <!-- <script type="text/javascript">
+    new Twitch.Player("twitch-embed", {
+      video: "1070479244"
+    });
+  </script> -->
+
   <script src="https://kit.fontawesome.com/ba87b9c17d.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
