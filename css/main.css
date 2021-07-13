@@ -16,6 +16,7 @@ body {
     /* overflow: hidden; */
     /* margin: 0; */
     /* padding: 0; */
+    height:100vh;
     font-family: 'Comic Neue', cursive;
     /* font-family: 'Shadows Into Light', cursive; */
 }
@@ -62,10 +63,27 @@ footer {
   overflow-y: scroll;
 } */
 
+a {
+  color: #4b8789;
+}
+
+.body { height: 100% }
+
+.mainCard{
+  height: 52.5vh;
+}
+
+.sideCard {
+  margin:0 0 1.5% 0;
+}
+
+iframe {
+  border-radius: 5px;
+}
 
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .body {
     margin-bottom: 80px;
   }
-}
+} */
