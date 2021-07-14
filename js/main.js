@@ -46,12 +46,29 @@ vidList.forEach((vid, index) => {
     const contain = document.createElement('div');
     contain.classList.add('card', 'sideCard');
 
+    if(index === vidList.length - 2) {
+      contain.classList.add('bottom')
+    }
+
     // console.log(document.body.clientHeight)
     // console.log(contain.offsetHeight)
-    // contain.height = document.body.clientHeight - contain.offsetTop - 80
-    
+    // contain.height = document.body.clientHeight - contain.offsetTop - 80    
 
     contain.appendChild(frame);
     sideContainer.appendChild(contain);
   }
 })
+
+window.onscroll = function () {
+  // console.log(document.documentElement.scrollTop);
+  // console.log(document.documentElement.scrollTop || document.body.scrollTop);
+  const mainCard = document.querySelector('.mainCard');
+  const temp = document.querySelector('.temp');
+  if(document.documentElement.scrollTop > 347){
+    mainCard.classList.add('sticky-main');
+    temp.classList.remove('hide-temp');
+  } else {
+    mainCard.classList.remove('sticky-main');
+    temp.classList.add('hide-temp');
+  }
+};

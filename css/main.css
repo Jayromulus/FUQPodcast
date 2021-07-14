@@ -67,7 +67,9 @@ a {
   color: #4b8789;
 }
 
-.body { height: 100% }
+.body { 
+  height: 100%;
+}
 
 .mainCard{
   height: 52.5vh;
@@ -81,12 +83,31 @@ iframe {
   border-radius: 5px;
 }
 
-.sideContainer {
-  overflow-y: scroll;
+.bottom {
+  margin-bottom: 67px;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .body {
-    margin-bottom: 80px;
-  }
+/* .sticky-main {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 66.3%;
+}
+
+.temp {
+  height: 100%;
+  position:absolute;
+  width: 100%;
+}
+
+.hide-temp {
+  display:none;
+} */
+
+/* .container
+{
+    min-height: 70%;
+    min-height: -webkit-calc(100% - 186px);
+    min-height: -moz-calc(100% - 186px);
+    min-height: calc(100% - 186px);
 } */
