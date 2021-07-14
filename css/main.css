@@ -81,6 +81,9 @@ iframe {
   border-radius: 5px;
 }
 
+.sideContainer {
+  overflow-y: scroll;
+}
 
 /* @media only screen and (max-width: 600px) {
   .body {
